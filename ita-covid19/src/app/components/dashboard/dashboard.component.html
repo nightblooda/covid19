@@ -1,0 +1,23 @@
+<!-- <div *ngFor="let result of gs">
+  <p>{{ result.total_cases }}</p>
+</div> -->
+<div>
+  <p>New Confirmed Cases : {{ gs.NewConfirmed }}</p>
+  <p>Total Confirmed Cases : {{ gs.TotalConfirmed }}</p>
+  <p>New Deaths : {{ gs.NewDeaths }}</p>
+  <p>Total Deaths : {{ gs.TotalDeaths }}</p>
+  <p>New Recovered : {{ gs.NewRecovered }}</p>
+  <p>Total Recovered : {{ gs.TotalRecovered }}</p>
+</div>
+<h4>India</h4>
+<div *ngFor="let mycountry of india">
+  <p>{{ mycountry.NewConfirmed }}</p>
+</div>
+<h4>Timeline</h4>
+<div *ngFor="let t of timeline">
+  <p>{{ t.totalconfirmed }}</p>
+</div>
+<h4>Countries</h4>
+<div *ngFor="let country of countries">
+  <p>{{ country.Country }}</p>
+</div>

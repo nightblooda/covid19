@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ita-covid19"
+    }
+  },
+  "defaultProject": "ita-covid19",
+  "cli": {
+    "analytics": false
+  }
 }

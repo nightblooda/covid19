@@ -1,0 +1,29 @@
+<h1>Search</h1>
+<p class="lead">Enter something about search hints</p>
+<form>
+  <div class="form-group" [formGroup]="oppoSuitsForm">
+    <input type="text" name="searchStr" [(ngModel)] = "searchStr" [ngModelOptions]="{standalone:true}" (keyup) = "searchContent()" class="form-control" placeholder="Search...">
+    <select class="form-control" formControlName="name" (change) = "searchContent()">
+        <option disabled>Select Filter</option>
+        <option>Choose</option>
+        <option *ngFor="let suit of oppoSuits">{{suit}}</option>
+      </select>
+  </div>
+</form>
+<div>
+  <div *ngFor="let result of searchResult">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="search-res well">
+          <h4>Patient ID: {{ result.pid }}</h4>
+          <div>
+            <p>Address: {{ result.address }}</p>
+            <p>Coordinates: {{ result.latlong }}</p>
+            <p>Time From: {{ result.timefrom }}</p>
+            <p>Time To: {{ result.timeto }}</p>
+            <p>Type: {{ result.type }}</p>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
