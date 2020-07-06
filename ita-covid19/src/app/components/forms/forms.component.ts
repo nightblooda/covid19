@@ -12,8 +12,8 @@ export class FormsComponent implements OnInit {
   userSettings: UserSettings = {
     name : 'Sheldon',
     emailOffers : true,
-    interfaceStyle : 'Dark',
-    subscriptionType : 'Annual',
+    interfaceStyle : 'Moderate',
+    subscriptionType : 'Travel',
     notes : 'some notes...'
   }
   constructor() { }
