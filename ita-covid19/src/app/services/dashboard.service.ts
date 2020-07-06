@@ -16,6 +16,8 @@ export class DashboardService {
 
   timelineUrl : string = "https://api.covid19india.org/data.json";
 
+  statesUrl : string = "http://covid19-india-adhikansh.herokuapp.com/states"
+
   constructor(private http:HttpClient) { }
 
   getStats() : Observable<any>{
@@ -24,5 +26,9 @@ export class DashboardService {
 
   getTimeline() : Observable<any>{
     return this.http.get<any>(this.timelineUrl);
+  }
+
+  getStates() : Observable<any>{
+    return this.http.get<any>(this.statesUrl);
   }
 }

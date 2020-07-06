@@ -1,0 +1,21 @@
+<h2 class="title-ck">Corona Statistic in Indian States</h2>
+<div class="artist-albums">
+  <div class="row">
+    <div *ngFor="let state of states">
+      <div class="col-md-4">
+        <div class="well album manage-height">
+          <div>
+            <h4>{{ state.name }}</h4>
+            <div class="margin-set">
+              <p>Total Cases : {{ state.total }}</p>
+              <p>Total Deaths : {{ state.death }}</p>
+              <p>Total Recovered : {{ state.cured }}</p>
+              <p>Total Active : {{ state.active }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      
+    </div>

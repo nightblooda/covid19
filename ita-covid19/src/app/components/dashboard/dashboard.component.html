@@ -1,8 +1,145 @@
 <!-- <div *ngFor="let result of gs">
   <p>{{ result.total_cases }}</p>
 </div> -->
+<h2 class="title-ck">Global Stats</h2>
+<div class="artist-albums">
+  <div class="row">
+    <div>
+      <div class="col-md-4">
+        <div class="well album">
+          <div>
+            <!-- <img class="album-thumb img-thumbnail" src="../../../assets/img/hello.jpg"> -->
+            <div class="margin-set">
+              <p>New Confirmed Cases : {{ gs.NewConfirmed }}</p>
+              <p>Total Confirmed Cases : {{ gs.TotalConfirmed }}</p>
+            </div>
+            <!-- <a class="btn btn-default btn-block">Album Detials</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="col-md-4">
+        <div class="well album">
+          <div>
+            <!-- <img class="album-thumb img-thumbnail" src="../../../assets/img/hello.jpg"> -->
+            <div class="margin-set">
+              <p>New Deaths : {{ gs.NewDeaths }}</p>
+              <p>Total Deaths : {{ gs.TotalDeaths }}</p>
+            </div>
+            <!-- <a class="btn btn-default btn-block">Album Detials</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="col-md-4">
+        <div class="well album">
+          <div>
+            <!-- <img class="album-thumb img-thumbnail" src="../../../assets/img/hello.jpg"> -->
+            <div class="margin-set">
+              <p>New Recovered : {{ gs.NewRecovered }}</p>
+              <p>Total Recovered : {{ gs.TotalRecovered }}</p>
+            </div>
+
+            <!-- <a class="btn btn-default btn-block">Album Detials</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+<div class="col-md-4">
+    <div class="well album">
+      <div>
+        <a class="btn btn-default btn-block" routerLink="/countries">Corona Affected Countries Stats</a>
+      </div>
+    </div>
+  </div>
+</div>
 <div>
-  <p>New Confirmed Cases : {{ gs.NewConfirmed }}</p>
+    <h2 class="title-ck">India Stats</h2>
+    <div class="artist-albums">
+      <div class="row">
+        <div *ngFor="let mycountry of india">
+          <!-- <p>{{ mycountry.Date }}</p> -->
+          <div class="col-md-4">
+            <div class="well album">
+              <div>
+                <!-- <img class="album-thumb img-thumbnail" src="../../../assets/img/hello.jpg"> -->
+                <div class="margin-set">
+                  <p>New Confirmed Cases : {{ mycountry.NewConfirmed }}</p>
+                  <p>Total Confirmed Cases : {{ mycountry.TotalConfirmed }}</p>
+                </div>
+                <!-- <a class="btn btn-default btn-block">Album Detials</a> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="well album">
+              <div>
+                <!-- <img class="album-thumb img-thumbnail" src="../../../assets/img/hello.jpg"> -->
+                <div class="margin-set">
+                  <p>New Deaths : {{ mycountry.NewDeaths }}</p>
+                  <p>Total Deaths : {{ mycountry.TotalDeaths }}</p>
+                </div>
+                <!-- <a class="btn btn-default btn-block">Album Detials</a> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="well album">
+              <div>
+                <!-- <img class="album-thumb img-thumbnail" src="../../../assets/img/hello.jpg"> -->
+                <div class="margin-set">
+                  <p>New Recovered : {{ mycountry.NewRecovered }}</p>
+                  <p>Total Recovered : {{ mycountry.TotalRecovered }}</p>
+                </div>
+    
+                <!-- <a class="btn btn-default btn-block">Album Detials</a> -->
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="well album">
+                  <div>
+                    <a class="btn btn-default btn-block" routerLink="/states">Indian States Corona Stats</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+  <h2 class="title-ck">India Corona TimeLine</h2>
+  <div *ngFor="let t of timeline">
+      <div class="row">
+          <div class="col-md-12">
+            <div class="search-res well">
+              <h4 class="date-align">{{ t.date }}</h4>
+              <div>
+                <div class="row margin-reset">
+                  <span class="col-md-4">Todays Confirmed Cases: {{ t.dailyconfirmed }}</span>
+                  <span class="col-md-4">Todays Deceased : {{ t.dailydeceased }}</span>
+                  <span class="col-md-4">Todays Recovered : {{ t.dailyrecovered }}</span>
+                </div>
+                <div class="row margin-reset">
+                  <span class="col-md-4">Total Confirmed : {{ t.totalconfirmed }}</span>
+                  <span class="col-md-4">Total Deceased : {{ t.totaldeceased }}</span>
+                  <span class="col-md-4">Total Recovered : {{ t.totalrecovered }}</span>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+  <!-- <p>New Confirmed Cases : {{ gs.NewConfirmed }}</p>
   <p>Total Confirmed Cases : {{ gs.TotalConfirmed }}</p>
   <p>New Deaths : {{ gs.NewDeaths }}</p>
   <p>Total Deaths : {{ gs.TotalDeaths }}</p>
@@ -20,4 +157,4 @@
 <h4>Countries</h4>
 <div *ngFor="let country of countries">
   <p>{{ country.Country }}</p>
-</div>
+</div> -->

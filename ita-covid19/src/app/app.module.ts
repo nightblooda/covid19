@@ -9,6 +9,9 @@ import { AngularComponent } from './components/angular/angular.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HeaderComponent } from './components/layout/header/header.component';
 import { SearchComponent } from './components/search/search.component';
+import { FormsComponent } from './components/forms/forms.component';
+import { CountriesComponent } from './components/countries/countries.component';
+import { StatesComponent } from './components/states/states.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { SearchComponent } from './components/search/search.component';
     AngularComponent,
     DashboardComponent,
     HeaderComponent,
-    SearchComponent
+    SearchComponent,
+    FormsComponent,
+    CountriesComponent,
+    StatesComponent
   ],
   imports: [
     BrowserModule,

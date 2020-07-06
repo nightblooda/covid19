@@ -29,6 +29,7 @@ export class DashboardComponent implements OnInit {
     })
     this.dashboardService.getTimeline().subscribe( t => {
       this.timeline = t["cases_time_series"];
+      this.timeline = this.timeline.reverse();
       console.log(this.timeline);
     })
   }

@@ -1,0 +1,20 @@
+<h2 class="title-ck">Corona Affected Countries</h2>
+<div class="artist-albums">
+  <div class="row">
+    <div *ngFor="let country of countries">
+      <div class="col-md-4">
+        <div class="well album">
+          <div>
+            <h4>{{ country.Country }}</h4>
+            <div class="margin-set">
+              <p>Total Confirmed Cases : {{ country.TotalConfirmed }}</p>
+              <p>Total Deaths : {{ country.TotalDeaths }}</p>
+              <p>TotalRecovered : {{ country.TotalRecovered }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      
+    </div>
