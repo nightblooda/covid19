@@ -1,7 +1,17 @@
   
 <div class="container">
+  <div id = "newdiv">Form Submitted Successfully!</div>
+<div id = "myDiv">
     <h2>User Settings</h2>   
+    
     <form #form="ngForm" (ngSubmit)="onSubmit(form)">
+      <!-- <p *ngFor="let alert of alerts">
+        <ngb-alert [type]="alert.type" (close)="close(alert)">{{ alert.message }}</ngb-alert>
+      </p>
+      <p>
+        <button type="button" class="btn btn-primary" (click)="reset()">Reset</button>
+      </p> -->
+
       <div class="form-group">
         <label for="name">Patient ID</label>
         <input id="name" name="name" class="form-control" [(ngModel)]="userSettings.name" 
@@ -57,7 +67,8 @@
         <label for="notes">Notes</label>
         <textarea id="notes" name="notes" class="form-control" rows="5" [(ngModel)]="userSettings.notes"></textarea>
       </div>
-      <button class="btn btn-primary">Send</button>
+      <button class="btn btn-primary" id = "mybtn">Submit</button>
     </form>
+    </div>
   </div>
   <!-- <h3>{{userSettings | json}}</h3> -->
