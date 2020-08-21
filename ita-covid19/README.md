@@ -1,6 +1,8 @@
 # ItaCovid19
+This is simple project which track down the data releated to covid-19. In this project Angular version 10.0.0 is used.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.0.
+# Screenshots
+[Here] is some screenshots of application(https://github.com/nightblooda/covid19/edit/master/ita-covid19/screenshots);
 
 ## Development server
 
